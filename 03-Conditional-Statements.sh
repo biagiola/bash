@@ -9,3 +9,4 @@ else
 fi
 
 # -eq: equal; -ne: not equal; -gt: grater than; -lt: less than
+# -ge: greater or equal; -le: less or equal; 
