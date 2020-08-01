@@ -1,3 +1,5 @@
+#! /bin/bash
+
 # Basics commands
 echo "Enter your name: "
 
