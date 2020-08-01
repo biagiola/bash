@@ -1,11 +1,10 @@
-#! /bin/bash
-
 number=1
 
-while [ $number -lt 10 ]
+until [ $number -ge 10 ]
 do
     echo "$number"
     number=$(( $number + 1 ))
 done
 
 # prints { 1,2,3 ... 9 }
+# the cycle will execute until the condition be true
