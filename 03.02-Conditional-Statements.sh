@@ -9,3 +9,5 @@ then
 else    
     echo "age is not correct"
 fi
+
+# -a is equal to &&
