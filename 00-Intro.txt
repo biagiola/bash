@@ -1,5 +1,0 @@
-# See shells availables 
-[prompt]$> cat /etc/shells
-
-# see the url of our bash
-[prompt]$> wich bash
