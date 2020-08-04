@@ -18,4 +18,8 @@ ls -al>file1.txt
 # if there's an error will be re-write
 # the whole file
 ls -al>file1.txt 2>&1
+<<<<<<< HEAD
 ls +al >& file1.txt short version
+=======
+ls +al >& file1.txt short version
+>>>>>>> 2eefd2b07f7646bc57bf73308d79858b46eea96f
