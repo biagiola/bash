@@ -1,0 +1,1 @@
+echo "10-Pipes.file1.sh: $MSG"
