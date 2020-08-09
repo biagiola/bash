@@ -3,6 +3,9 @@
 # touch filename creates a file
 # rm filename removes it
 
+# read filename
+# touch $filename
+
 echo "Enter filename to check"
 read filename
 
