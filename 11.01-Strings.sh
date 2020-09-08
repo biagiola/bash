@@ -8,14 +8,14 @@ read st2
 
 if [ "$st1" \< "$st2" ]
 then
-    echo "$st1 is smaller thant $st2" 
+  echo "$st1 is smaller thant $st2" 
 
 elif [ "$st2" \< "$st1" ]
 then 
-    echo "$st2 is smaller thant $st1" 
+  echo "$st2 is smaller thant $st1" 
 
 else 
-    echo "both strings are equals"
+  echo "both strings are equals"
 fi
 
 echo "Lenght of $st1: ${#st1}"

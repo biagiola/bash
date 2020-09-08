@@ -149,4 +149,131 @@ Try 'chmod --help' for more information.
 ]0;david@david-desktop: ~/codes/shell-lenguage[01;32mdavid@david-desktop[00m:[01;34m~/codes/shell-lenguage[00m$ chmod --help
 Usage: chmod [OPTION]... MODE[,MODE]... FILE...
   or:  chmod [OPTION]... OCTAL-MODE FILE...
-  or:  chmod [OPTION]... --reference=RFILE FILE
+  or:  chmod [OPTION]... --reference=RFILE FILE...
+Change the mode of each FILE to MODE.
+With --reference, change the mode of each FILE to that of RFILE.
+
+  -c, --changes          like verbose but report only when a change is made
+  -f, --silent, --quiet  suppress most error messages
+  -v, --verbose          output a diagnostic for every file processed
+      --no-preserve-root  do not treat '/' specially (the default)
+      --preserve-root    fail to operate recursively on '/'
+      --reference=RFILE  use RFILE's mode instead of MODE values
+  -R, --recursive        change files and directories recursively
+      --help     display this help and exit
+      --version  output version information and exit
+
+Each MODE is of the form '[ugoa]*([-+=]([rwxXst]*|[ugo]))+|[-+=][0-7]+'.
+
+GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
+Full documentation at: <https://www.gnu.org/software/coreutils/chmod>
+or available locally via: info '(coreutils) chmod invocation'
+]0;david@david-desktop: ~/codes/shell-lenguage[01;32mdavid@david-desktop[00m:[01;34m~/codes/shell-lenguage[00m$ chmod --help[K[K[K[K[K[K[K[K[K[K[K[Kchmod +10-Pipes.file2.sh[1P+10-Pipes.file2.sh[1P10-Pipes.file2.sh 10-Pipes.file2.shx10-Pipes.file2.sh+10-Pipes.file2.sh[1P10-Pipes.file2.sh 10-Pipes.file2.sh[1@+
+]0;david@david-desktop: ~/codes/shell-lenguage[01;32mdavid@david-desktop[00m:[01;34m~/codes/shell-lenguage[00m$ ls
+[0m[01;32m01-Basics.sh[0m                     [01;32m08.01-Inputs.sh[0m    [01;32m12-Arithmetic.sh[0m
+[01;32m02-Commets.sh[0m                    [01;32m08.02-Inputs.sh[0m    [01;32m13-Hexadecimals.sh[0m
+[01;32m03.01-Conditional-Statements.sh[0m  [01;32m08-Inputs.sh[0m       [01;32m14-Arrays.sh[0m
+[01;32m03.02-Conditional-Statements.sh[0m  [01;32m09.02-output.sh[0m    [01;32m15.01-Functions.sh[0m
+[01;32m03.03-Conditional-Statements.sh[0m  [01;32m10-Pipes.file1.sh[0m  [01;32m15-Functions.sh[0m
+[01;32m03-Conditional-Statements.sh[0m     [01;32m10-Pipes.file2.sh[0m  [01;32m16-Directives.sh[0m
+[01;32m04-while.sh[0m                      [01;32m10-Pipes.sh[0m        [01;32m17.01-Files.sh[0m
+[01;32m05-until.sh[0m                      [01;32m11.01-Strings.sh[0m   [01;32m17-File.sh[0m
+[01;32m06-for.sh[0m                        [01;32m11.02-Strings.sh[0m   18-sende-emails.sh
+[01;32m07-break-contine.sh[0m              [01;32m11-Strings.sh[0m
+]0;david@david-desktop: ~/codes/shell-lenguage[01;32mdavid@david-desktop[00m:[01;34m~/codes/shell-lenguage[00m$ git add .
+]0;david@david-desktop: ~/codes/shell-lenguage[01;32mdavid@david-desktop[00m:[01;34m~/codes/shell-lenguage[00m$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mmodified:   01-Basics.sh[m
+	[32mmodified:   08.01-Inputs.sh[m
+	[32mmodified:   09.02-output.sh[m
+	[32mmodified:   10-Pipes.file1.sh[m
+	[32mnew file:   10-Pipes.file2.sh[m
+	[32mmodified:   10-Pipes.sh[m
+
+]0;david@david-desktop: ~/codes/shell-lenguage[01;32mdavid@david-desktop[00m:[01;34m~/codes/shell-lenguage[00m$ new[K[K[Kgit commit -m "new pipe added  and comments"
+[master 418cb2c] new pipe added and comments
+ 6 files changed, 96 insertions(+), 8 deletions(-)
+ create mode 100755 10-Pipes.file2.sh
+]0;david@david-desktop: ~/codes/shell-lenguage[01;32mdavid@david-desktop[00m:[01;34m~/codes/shell-lenguage[00m$ git push
+Username for 'https://github.com': biagiola
+Password for 'https://biagiola@github.com': 
+Enumerating objects: 14, done.
+Counting objects:   7% (1/14)Counting objects:  14% (2/14)Counting objects:  21% (3/14)Counting objects:  28% (4/14)Counting objects:  35% (5/14)Counting objects:  42% (6/14)Counting objects:  50% (7/14)Counting objects:  57% (8/14)Counting objects:  64% (9/14)Counting objects:  71% (10/14)Counting objects:  78% (11/14)Counting objects:  85% (12/14)Counting objects:  92% (13/14)Counting objects: 100% (14/14)Counting objects: 100% (14/14), done.
+Delta compression using up to 2 threads
+Compressing objects:  14% (1/7)Compressing objects:  28% (2/7)Compressing objects:  42% (3/7)Compressing objects:  57% (4/7)Compressing objects:  71% (5/7)Compressing objects:  85% (6/7)Compressing objects: 100% (7/7)Compressing objects: 100% (7/7), done.
+Writing objects:  12% (1/8)Writing objects:  25% (2/8)Writing objects:  37% (3/8)Writing objects:  50% (4/8)Writing objects:  62% (5/8)Writing objects:  75% (6/8)Writing objects:  87% (7/8)Writing objects: 100% (8/8)Writing objects: 100% (8/8), 3.17 KiB | 3.17 MiB/s, done.
+Total 8 (delta 4), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/4)[Kremote: Resolving deltas:  25% (1/4)[Kremote: Resolving deltas:  50% (2/4)[Kremote: Resolving deltas:  75% (3/4)[Kremote: Resolving deltas: 100% (4/4)[Kremote: Resolving deltas: 100% (4/4), completed with 4 local objects.[K
+To https://github.com/biagiola/shell-scripting.git
+   af376d7..418cb2c  master -> master
+]0;david@david-desktop: ~/codes/shell-lenguage[01;32mdavid@david-desktop[00m:[01;34m~/codes/shell-lenguage[00m$ clear
+[H[2J[3J]0;david@david-desktop: ~/codes/shell-lenguage[01;32mdavid@david-desktop[00m:[01;34m~/codes/shell-lenguage[00m$ .*1[K[K/11.01-Strings.sh 
+Enter the first string
+carlos
+Enter the second string
+juanjo
+carlos is smaller thant juanjo
+Lenght of carlos: 6
+Lenght of juanjo: 6
+]0;david@david-desktop: ~/codes/shell-lenguage[01;32mdavid@david-desktop[00m:[01;34m~/codes/shell-lenguage[00m$ ./11.01-Strings.sh 
+Enter the first string
+a
+Enter the second string
+b
+a is smaller thant b
+Lenght of a: 1
+Lenght of b: 1
+]0;david@david-desktop: ~/codes/shell-lenguage[01;32mdavid@david-desktop[00m:[01;34m~/codes/shell-lenguage[00m$ ./11.01-Strings.sh 
+Enter the first string
+b
+Enter the second string
+B
+B is smaller thant b
+Lenght of b: 1
+Lenght of B: 1
+]0;david@david-desktop: ~/codes/shell-lenguage[01;32mdavid@david-desktop[00m:[01;34m~/codes/shell-lenguage[00m$ ./11.01-Strings.sh 
+Enter the first string
+Z
+Enter the second string
+a
+Z is smaller thant a
+Lenght of Z: 1
+Lenght of a: 1
+]0;david@david-desktop: ~/codes/shell-lenguage[01;32mdavid@david-desktop[00m:[01;34m~/codes/shell-lenguage[00m$ ./11.01-Strings.sh [K.12[K[K[K./142[K[K2-Arithmetic.sh 
+46
+46
+46
+46
+]0;david@david-desktop: ~/codes/shell-lenguage[01;32mdavid@david-desktop[00m:[01;34m~/codes/shell-lenguage[00m$ ./12-Arithmetic.sh 
+46
+46
+0
+expr: non-integer argument
+
+]0;david@david-desktop: ~/codes/shell-lenguage[01;32mdavid@david-desktop[00m:[01;34m~/codes/shell-lenguage[00m$ 14[K[K0.[K[K./14-Arrays.sh 
+print all values + bwm, toyota, mercedes, audi, renoult
+print all indexes + 0 1 2 3 4
+print length + 5
+]0;david@david-desktop: ~/codes/shell-lenguage[01;32mdavid@david-desktop[00m:[01;34m~/codes/shell-lenguage[00m$ ./14-Arrays.sh 
+print all values: bwm, toyota, mercedes, audi, renoult
+print all indexes 0 1 2 3 4
+print length + 5
+]0;david@david-desktop: ~/codes/shell-lenguage[01;32mdavid@david-desktop[00m:[01;34m~/codes/shell-lenguage[00m$ ./14-Arrays.sh 
+print all values: bwm, toyota, mercedes, audi, renoult
+print all indexes: 0 1 2 3 4
+print length: 5
+]0;david@david-desktop: ~/codes/shell-lenguage[01;32mdavid@david-desktop[00m:[01;34m~/codes/shell-lenguage[00m$ ./14-Arrays.sh [K./0[K15-Functions.sh 
+I love linux and mac
+]0;david@david-desktop: ~/codes/shell-lenguage[01;32mdavid@david-desktop[00m:[01;34m~/codes/shell-lenguage[00m$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   08.01-Inputs.sh[m
+	[31mmodified:   11-Strings.sh[m

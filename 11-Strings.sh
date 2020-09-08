@@ -8,8 +8,8 @@ read st2
 
 if [ "$st1" == "$st2" ]
 then
-    echo "the strings are equals"
+  echo "the strings are equals"
 else 
-    echo "the strings are not equals"
+  echo "the strings are not equals"
 fi
 
