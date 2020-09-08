@@ -2,14 +2,14 @@
 car=$1
 
 case $car in
-    "bmw" )
-        echo "It's BWM" ;;
-    "mercedes benz" )
-        echo "It's Mercedes Benz" ;;
-    "mercedes" )
-        echo "It's Mercedes Benz" ;;
-    "toyota" )
-        echo "It's toyota" ;;
-    * )
-        echo "Unknow car name" ;;
+  "bmw" )
+    echo "It's BWM" ;;
+  "mercedes benz" )
+    echo "It's Mercedes Benz" ;;
+  "mercedes" )
+    echo "It's Mercedes Benz" ;;
+  "toyota" )
+    echo "It's toyota" ;;
+  * )
+    echo "Unknow car name" ;;
 esac
