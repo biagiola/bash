@@ -5,13 +5,13 @@ read filename
 
 if [[ -f "$filename" ]]
 then
-    # while IFS="" read -r line
-    while IFS= read -r line 
-    do
-        echo "$line"
-    
-    done < $filename # > to write and < to read
+  # while IFS="" read -r line
+  while IFS= read -r line 
+  do
+    echo "$line"
+  
+  done < $filename # > to write and < to read
 
 else
-    echo "File doesn't exists"
+  echo "File doesn't exists"
 fi

@@ -11,16 +11,16 @@ read filename
 
 if [[ -f "$filename" ]]
 then
-    echo "$filename exists. Enter some text there"
-    read fileText
+  echo "$filename exists. Enter some text there"
+  read fileText
 
-    # append the text on it
-    echo "$fileText" >> $filename
-    # echo "$fileText" > $filename same as above but erase the whole file
-    # first before add the text
+  # append the text on it
+  echo "$fileText" >> $filename
+  # echo "$fileText" > $filename same as above but erase the whole file
+  # first before add the text
 
 
 else
-    echo "$filename doestn exists"
+  echo "$filename doestn exists"
 
 fi

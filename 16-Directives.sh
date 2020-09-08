@@ -12,8 +12,8 @@ read directory
 
 if [ -d "$directory" ]
 then
-    echo "$directory exists"
+  echo "$directory exists"
 
 else
-    echo "$directoy doest'n exists"
+  echo "$directoy doest'n exists"
 fi
