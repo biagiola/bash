@@ -1,15 +1,8 @@
-#! /bin/bash
+#!/bin/bash
 
-function messageOne() {
-  echo "This is message one"
+myFunction () {
+  funcResult="some result"
 }
 
-function messageTwo() {
-  echo "This is message Two"
-}
-
-function messageThree() {
-  echo "This is message Three"
-}
-
-messageOne
+myFunction
+echo $funcResult
