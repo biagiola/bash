@@ -15,3 +15,11 @@ cat > file.txt
 
 # wait 5s to finish the program
 sleep 5
+
+:'
+  In every sh file we must to change the mode, 
+  to read from executable file
+  with the folling command:
+
+  chmod +x <file name>
+'
