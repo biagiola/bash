@@ -1,3 +1,6 @@
 #! /bin/bash
-ls -d *react # look in the current parrent directory with a 'react' argunment
-ls *react # same but look into the subfolders too
+ls -d abc*   # list all files starting with abc---
+ls -d *abc*  # list all files containing --abc--
+ls -d *abc   # list all files ending with --abc
+# -d is for current directory
+
