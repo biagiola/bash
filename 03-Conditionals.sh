@@ -44,6 +44,12 @@ fi
 
 ###
 # $1 is a argument that we pass through the prompt to the script
+if [ -z "$1" ]
+then
+  echo "No argument supplied"
+  exit 1
+fi
+
 car=$1
 case $car in
   "bmw" )
