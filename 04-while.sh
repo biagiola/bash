@@ -1,11 +1,17 @@
 #! /bin/bash
 
-number=1
 
-while [ $number -lt 10 ]
+
+: 'while [ $number -lt 10 ]
 do
   echo "$number"
   number=$(( $number + 1 ))
-done
+done'
 
+number=0
+while (( $number < 10 ))
+do
+  echo "$number"
+  (( number++ ))
+done
 # prints { 1,2,3 ... 9 }
