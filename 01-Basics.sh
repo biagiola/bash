@@ -16,6 +16,9 @@ cat > file.txt
 # wait 5s to finish the program
 sleep 5
 
+# close the script to continue typing in the prompt
+exit 0; # 0 for success, 1 for abnormal finish
+
 :'
   In every sh file we must to change the mode, 
   to read from executable file
